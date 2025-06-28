@@ -1,0 +1,206 @@
+@import "tailwindcss";
+
+/* INPUT PERSONALIZADO */
+.input-custom {
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.input-custom .el-input__wrapper {
+  background-color: #1e293b !important; /* bg-gray-900 */
+  border-radius: 8px !important;
+  padding: 2px !important;
+  box-shadow: none !important;
+}
+
+.input-custom:focus-within .el-input__wrapper {
+  box-shadow: 0 0 0 2px #059669 !important;
+}
+
+
+.input-custom input.el-input__inner {
+  color: white !important;
+  background-color: transparent !important;
+  border: none !important;
+  padding: 5px !important;
+}
+
+.input-custom > .el-input__inner {
+  background-color: #1e293b !important; /* slate-800 */
+  color: white !important;
+  border-radius: 8px !important;
+  padding: 0.5rem !important;
+  border: none !important;
+  width: 90% !important;
+  box-shadow: none !important;
+}
+
+.custom-form > .el-form-item__inner {
+  color: white;
+}
+
+.input-custom > .el-input__inner:focus {
+  outline: none !important;
+  box-shadow: 0 0 0 2px #059669 !important; /* emerald-500 */
+}
+
+.input-custom > .el-input__inner:active {
+  outline: none !important;
+  box-shadow: 0 0 0 2px #059669 !important; /* emerald-500 */
+}
+
+/* Fuerza el color blanco en los labels */
+.el-form-item__label {
+  color: white !important;
+}
+
+.custom-form .el-form-item span {
+  color: white !important;
+  cursor: pointer;
+  transition: color 0.2s ease;
+  display: flex;
+  margin-right: 2px;
+}
+
+/* .custom-form .el-form-item span:hover {
+  color: #cbd5e1 !important;
+}
+
+.custom-form .el-form-item span:active {
+  color: #94a3b8 !important;
+} */
+
+
+/* BOTÓN PERSONALIZADO */
+.btn-custom {
+  background-color: #10b981 !important; /* emerald-500 */
+  color: white !important;
+  border-radius: 0.5rem !important;
+  padding: 0.5rem 1rem !important;
+  cursor: pointer !important;
+  border: none !important;
+  transition: background-color 0.2s ease !important;
+  user-select: none !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-weight: 600 !important;
+}
+
+.btn-custom:hover {
+  background-color: #059669 !important; /* emerald-600 */
+}
+
+.btn-custom:active {
+  background-color: #047857 !important; /* emerald-700 */
+  outline: none !important;
+}
+
+.btn-custom:focus-visible {
+  background-color: #059669 !important;
+  outline: none !important;
+}
+
+/* BOTON PESONALIZADO RED */
+.btn-custom-red {
+  background-color: #e11d48 !important; /* rose-600 */
+  color: white !important;
+  border-radius: 0.5rem !important;
+  padding: 0.5rem 1rem !important;
+  cursor: pointer !important;
+  border: none !important;
+  transition: background-color 0.2s ease !important;
+  user-select: none !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-weight: 600 !important;
+}
+
+.btn-custom-red:hover {
+  background-color: #be123c !important; /* rose-700 */
+}
+
+.btn-custom-red:active {
+  background-color: #9f1239 !important; /* rose-800 */
+  outline: none !important;
+}
+
+.btn-custom-red:focus-visible {
+  background-color: #9f1239 !important;
+  outline: none !important;
+}
+
+
+.my-dialog {
+  background-color: #0f172a !important;
+  max-width: 450px;
+  width: 100%;
+  padding: 2.5rem;
+  border-radius: 0.75rem;
+  color: white;
+  box-sizing: border-box;
+}
+
+/* Centrar el wrapper del dialog */
+.el-dialog__wrapper {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+/* Aplica a toda la capa del popper (dropdown completo) */
+.el-dropdown__popper,
+.el-popper {
+  background-color: #1f2937 !important; /* bg-gray-900 */
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.el-popper::before {
+  box-shadow: none !important;
+  filter: none !important;
+}
+
+/* Estilos específicos si usas popper-class */
+.dropdown-custom.el-popper {
+  background-color: #1f2937 !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* Asegura que el dropdown no tenga sombras adicionales */
+.el-dropdown-menu {
+  background-color: #1f2937 !important;
+  border: none !important;
+  box-shadow: none !important;
+  border-radius: 0.5rem !important;
+  padding: 0.25rem 0 !important;
+}
+
+/* Estilos de los items */
+.el-dropdown-menu__item {
+  color: white !important;
+  background-color: transparent !important;
+}
+
+.el-dropdown-menu__item:hover {
+  background-color: #111827 !important; /* bg-gray-800 */
+  color: #10b981 !important; /* emerald-500 */
+}
+
+/* Aplica a todo el popper (incluye menú y flecha) */
+.dropdown-custom {
+  background-color: #1f2937 !important;
+  border: none !important;
+  box-shadow: none !important;
+  border-radius: 0.5rem !important;
+}
+
+/* Estiliza la flecha del popper (el pico) */
+.dropdown-custom .el-popper__arrow::before {
+  background-color: #1f2937 !important;
+  border: none !important;
+  box-shadow: none !important;
+}
